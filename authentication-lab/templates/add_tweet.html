@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
 </head>
 <body>
-    Great Job!
+    <form method="POST" action="/add_tweet">
+     <!-- User Name -->
+        <div>
+            <label>Title*</label>
+            <div>
+                <input type="name"  name="title">
+            </div>
+        </div>
+        
+        <div>
+            <label>Text(maximum of 280 letters)*</label>
+            <div>
+                <input type="text"  name="text">
+            </div>
+        </div>
+
+        <div>
+             <input type="submit"/>
+        </div>
+    </form>
+
+    <font color="red">{{ error }}</font>
+
 </body>
 </html>
